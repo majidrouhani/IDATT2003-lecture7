@@ -1,4 +1,4 @@
-package edu.ntnu.idatt2001.lectures.fp.nestedclasses.staticexample;
+package edu.ntnu.idatt2001.lectures.nestedclasses.staticexample;
 
 public class StaticExample {
   static int data = 30;
@@ -21,7 +21,6 @@ public class StaticExample {
     
     StaticExample staticObj = new StaticExample();
     StaticExample.NoneStaticInner noneNtaticObj = staticObj.new NoneStaticInner();
-    noneNtaticObj.msg();
-    
+    noneNtaticObj.msg(); 
   }
 }

@@ -1,4 +1,4 @@
-package edu.ntnu.idatt2001.lectures.fp.nestedclasses.example;
+package edu.ntnu.idatt2001.lectures.nestedclasses.example;
 
 public class OuterClass {
   private final String name = "Ola Norman";
