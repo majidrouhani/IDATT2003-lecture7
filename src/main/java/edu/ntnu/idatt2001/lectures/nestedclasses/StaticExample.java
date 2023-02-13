@@ -3,12 +3,14 @@ package edu.ntnu.idatt2001.lectures.nestedclasses;
 public class StaticExample {
   static int data = 30;
 
+  //static inner class
   static class StaticInner {
     void msg() {
       System.out.println("data is " + data);
     }
   }
 
+  //member inner class
   class NoneStaticInner {
     void msg() {
       System.out.println("data is " + data);
