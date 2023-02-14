@@ -20,12 +20,16 @@ public class BinaryopertorExample {
         return o1.getId() - o2.getId();
       }
     };
-    
     BinaryOperator<Item> boMax = BinaryOperator.maxBy(compItem);
 
     Item max = boMax.apply(new Item(10, "first"), new Item(20, "second"));    
     System.out.println(max);    
-   
+
+    //Eksempel 2: lambda
+    Comparator<Item> compItem2 = (o1, o2) -> o1.getId() - o2.getId();
+    BinaryOperator<Item> boMax2 = BinaryOperator.maxBy(compItem2);
+    Item max2 = boMax2.apply(new Item(10, "first"), new Item(20, "second"));    
+    System.out.println(max2);    
     
     //Eksempel 3:
     BinaryOperator<Item> binaryOperator = BinaryOperator.minBy(compItem);
