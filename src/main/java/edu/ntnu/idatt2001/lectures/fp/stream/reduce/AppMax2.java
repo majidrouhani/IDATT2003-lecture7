@@ -16,13 +16,7 @@ public class AppMax2 {
 
 		List<Student> students = AppData.getData();
 
-
-    Comparator<Integer> comp = new Comparator<Integer>() {
-      @Override
-      public int compare(Integer o1, Integer o2) {
-        return o1 - o2;
-      }
-    };
+    Comparator<Integer> comp = (o1, o2) -> o1-o2;
 
     BinaryOperator<Integer> boMax = BinaryOperator.maxBy(comp);
 
