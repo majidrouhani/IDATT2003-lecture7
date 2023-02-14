@@ -42,6 +42,8 @@ public class App {
 
   public static void main(String args[]) {
 
+    System.out.println(App.data);
+    
     App.StaticInner.msg();
 
     new App.StaticInner().noneStaticMsg();
