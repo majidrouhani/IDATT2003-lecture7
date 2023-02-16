@@ -11,8 +11,8 @@ public class App2 {
 
     myList.stream()
           .filter(s -> s.startsWith("c"))
-          .map(s-> s.toUpperCase())
+          .map(String::toUpperCase)
           .sorted()
-          .forEach(s -> System.out.println(s));
+          .forEach(System.out::println);
   }
 }

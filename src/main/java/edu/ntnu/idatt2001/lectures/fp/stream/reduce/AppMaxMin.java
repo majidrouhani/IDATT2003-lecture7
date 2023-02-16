@@ -1,6 +1,5 @@
 package edu.ntnu.idatt2001.lectures.fp.stream.reduce;
 
-import java.text.ParseException;
 import java.util.Comparator;
 import java.util.List;
 import java.util.function.BinaryOperator;
@@ -8,9 +7,9 @@ import java.util.function.BinaryOperator;
 import edu.ntnu.idatt2001.lectures.example1.composition.AppData;
 import edu.ntnu.idatt2001.lectures.example1.composition.Student;
 
-public class AppMax1 {
+public class AppMaxMin {
 
-  public static void main(String[] args) throws ParseException {
+  public static void main(String[] args) {
 
 		List<Student> students = AppData.getData();
 

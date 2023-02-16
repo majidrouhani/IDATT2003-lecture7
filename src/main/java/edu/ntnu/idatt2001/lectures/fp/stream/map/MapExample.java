@@ -26,5 +26,10 @@ public class MapExample {
     System.out.println("\nLambda: ");
     birthdays = students.stream().map(s-> s.getBirthday()).toList();
     birthdays.forEach(System.out::println);
+
+    //Alternative
+    birthdays = students.stream().map(Student::getBirthday).toList();
+    birthdays.forEach(System.out::println);
+
   }
 }

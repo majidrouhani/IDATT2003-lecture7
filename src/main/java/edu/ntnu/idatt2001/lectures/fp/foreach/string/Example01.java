@@ -23,7 +23,7 @@ public class Example01 {
     }
 
     System.out.println("\nBruk av lambda");
-    names.forEach(s -> System.out.println(s));
+    names.forEach(System.out::println);
 
   }
 }
