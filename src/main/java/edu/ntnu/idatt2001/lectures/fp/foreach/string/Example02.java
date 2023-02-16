@@ -1,13 +1,15 @@
 package edu.ntnu.idatt2001.lectures.fp.foreach.string;
 
 import java.util.ArrayList;
+import java.util.List;
+
 import java.util.function.Consumer;
 
 public class Example02 {
 
   public static void main(String[] args) {
 
-    ArrayList<String> names = new ArrayList<String>();
+    List<String> names = new ArrayList<>();
 
     names.add("Hans");
     names.add("Ola");

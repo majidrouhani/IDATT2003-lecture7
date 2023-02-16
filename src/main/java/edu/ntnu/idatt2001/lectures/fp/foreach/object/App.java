@@ -20,10 +20,10 @@ public class App {
 		}
 
     System.out.println("\nUtskrift MED bruk av lambda alt 1:");
-    students.forEach(p -> System.out.println(p));
+    students.forEach(System.out::println);
 
     System.out.println("\nUtskrift MED bruk av lambda alt 2:");
-    Consumer<Student> out = (s) -> System.out.println(s);
+    Consumer<Student> out = System.out::println;
     students.forEach(out);
   }
 }

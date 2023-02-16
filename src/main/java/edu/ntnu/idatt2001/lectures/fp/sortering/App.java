@@ -35,11 +35,11 @@ public class App {
 
     System.out.println("Sort on lastname");
     students.sort((a, b) -> a.getLastname().compareTo(b.getLastname()));
-    students.forEach(s -> System.out.println(s));
+    students.forEach(System.out::println);
 
     System.out.println("Sort on age");
     Comparator<Student> compSortAge = (Student s1, Student s2) -> s1.getAge() - s2.getAge();    
     students.sort(compSortAge);
-    students.forEach(s -> System.out.println(s));
+    students.forEach(System.out::println);
   }
 }

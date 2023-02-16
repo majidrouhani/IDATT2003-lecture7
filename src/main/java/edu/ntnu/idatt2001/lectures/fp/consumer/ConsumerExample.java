@@ -1,15 +1,12 @@
 package edu.ntnu.idatt2001.lectures.fp.consumer;
 
-import java.util.function.Consumer;
+import java.util.function.IntConsumer;
 
 public class ConsumerExample {
   public static void main(String args[]) {
 
-    Consumer<Integer> out1 = a -> System.out.println(a);
+    IntConsumer outIntConsumer = System.out::println;
+    outIntConsumer.accept(10);
 
-    Consumer<Integer> out2 = System.out::println;
-
-    out1.accept(10);
-    out2.accept(10);
   }
 }

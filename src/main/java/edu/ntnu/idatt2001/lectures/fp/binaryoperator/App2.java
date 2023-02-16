@@ -16,8 +16,8 @@ public class App2 {
     
     //Eksempel 1: lambda
     BinaryOperator<Item> boMax = BinaryOperator.maxBy(compItem);
-    Item max2 = boMax.apply(firstItem, secondItem);    
-    System.out.println(max2);    
+    Item max = boMax.apply(firstItem, secondItem);    
+    System.out.println(max);    
     
     //Eksempel 2:
     BinaryOperator<Item> binaryOperator = BinaryOperator.minBy(compItem);

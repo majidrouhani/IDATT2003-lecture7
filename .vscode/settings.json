@@ -3,8 +3,8 @@
     "java.configuration.runtimes": [
         {
           "name": "JavaSE-17",
-          "path": "/Java/jdk-17.0.2",
-          "sources" : "/Java/jdk-17.0.2/lib/src.zip",
+          "path": "/Java/jdk-17.0.5",
+          "sources" : "/Java/jdk-17.0.5/lib/src.zip",
           "default":  true
          }
       ]

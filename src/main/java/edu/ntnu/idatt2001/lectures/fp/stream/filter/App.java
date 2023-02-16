@@ -15,7 +15,7 @@ public class App {
 
 		List<Student> students = AppData.getData();
 
-    List<Student> femaleStudents = new ArrayList<Student>();
+    List<Student> femaleStudents = new ArrayList<>();
     for (Student student : students) {
       if (student.getGender() == "F") {
         femaleStudents.add(student);
@@ -25,9 +25,9 @@ public class App {
 
     System.out.println("\nMed lambda: ");
     femaleStudents = students.stream()
-                       .filter(p -> p.getGender() == "F")
+                       .filter(p -> "F".equals(p.getGender()))
                        .toList();
 
-    femaleStudents.forEach(s -> System.out.println(s));
+    femaleStudents.forEach(System.out::println);
   }
 }

@@ -16,7 +16,7 @@ public class App {
     
     boolean womanExists = false;
     for (Student student : students) {
-      if (student.getGender() == "F") {
+      if ("F".equals(student.getGender())) {
         womanExists = true;
         break;
       }
@@ -24,6 +24,6 @@ public class App {
     System.out.println(womanExists);
 
     System.out.println("\nMed lambda: ");
-    System.out.println(students.stream().anyMatch(p -> p.getGender() == "F"));
+    System.out.println(students.stream().anyMatch(p -> "F".equals(p.getGender())));
   }
 }
