@@ -1,0 +1,11 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.configuration.runtimes": [
+        {
+          "name": "JavaSE-17",
+          "path": "/Java/jdk-17.0.2",
+          "sources" : "/Java/jdk-17.0.2/lib/src.zip",
+          "default":  true
+         }
+      ]
+}

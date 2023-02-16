@@ -56,6 +56,11 @@
           <version>3.4.1</version>
         </plugin>
         <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-site-plugin</artifactId>
+          <version>3.7.1</version>
+        </plugin>        
+        <plugin>
           <!-- Build an executable JAR -->
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
@@ -76,6 +81,11 @@
         </plugin>
       </plugins>
     </pluginManagement>
+    <resources>
+      <resource>
+        <directory>C:\Java\jdk-17.0.2\lib</directory>
+      </resource>
+    </resources>
   </build>
 </project>
   

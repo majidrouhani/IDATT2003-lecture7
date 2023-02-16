@@ -19,13 +19,14 @@ public class App {
     for (Student student: students) {
       System.out.println(student.toString());
     }
-
+    
     students.sort(new Comparator<Student>() {
       @Override
       public int compare(Student a, Student b) {
         return a.getName().compareTo(b.getName());
       }
     });
+
 
     System.out.println("After sort");
     for (Student student: students) {
@@ -36,8 +37,9 @@ public class App {
     students.sort((a, b) -> a.getLastname().compareTo(b.getLastname()));
     students.forEach(s -> System.out.println(s));
 
-    System.out.println("Sort on birthday");
-    students.sort((a, b) -> b.getBirthday().compareTo(a.getBirthday()));
+    System.out.println("Sort on age");
+    Comparator<Student> compSortAge = (Student s1, Student s2) -> s1.getAge() - s2.getAge();    
+    students.sort(compSortAge);
     students.forEach(s -> System.out.println(s));
   }
 }
