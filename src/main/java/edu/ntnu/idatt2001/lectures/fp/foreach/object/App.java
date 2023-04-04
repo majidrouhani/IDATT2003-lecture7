@@ -9,6 +9,10 @@ import edu.ntnu.idatt2001.lectures.example1.composition.Student;
 
 public class App {
 
+  static void print(Student s) {
+    System.out.println(">>"+s);
+  }
+
   public static void main(String[] args) {
 
 		List<Student> students = new ArrayList<>();
@@ -23,7 +27,12 @@ public class App {
     students.forEach(System.out::println);
 
     System.out.println("\nUtskrift MED bruk av lambda alt 2:");
-    Consumer<Student> out = System.out::println;
-    students.forEach(out);
+    Consumer<Student> out1 = System.out::println;
+    students.forEach(out1);
+
+    System.out.println("\nUtskrift MED bruk av lambda alt 3:");
+    Consumer<Student> out2 = App::print;
+    students.forEach(out2);
+
   }
 }
